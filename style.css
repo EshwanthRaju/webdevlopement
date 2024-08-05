@@ -1,67 +1,65 @@
-/* Basic Reset */
-body, h1, form, input, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* styles.css */
 
-/* Set a font and background color */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+ 
+    background-color: #ffc0cb; /* Light pink background color */
+    font-family: Arial, sans-serif; /* Font family for the whole page */
 }
 
-/* Center the login container */
 .login-container {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
+    background-color: #ffffff; /* White background for the login container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the container */
+    max-width: 400px; /* Maximum width */
+    margin: 50px auto; /* Center container horizontally and add margin on top/bottom */
 }
 
-/* Style the header */
-.login-container h1 {
-    margin-bottom: 20px;
-    color: #333;
+h1 {
+    font-size: 2em; /* Font size for the header */
+    color: #333; /* Dark grey text color */
+    text-align: center; /* Center align the header text */
 }
 
-/* Style the input groups */
 .input-group {
-    margin-bottom: 15px;
-    text-align: left;
+    margin-bottom: 15px; /* Space between input fields */
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #666;
+label {
+    display: block; /* Display label as block to stack above input field */
+    font-size: 1em; /* Font size for labels */
+    margin-bottom: 5px; /* Space between label and input field */
+    color: #555; /* Medium grey text color for labels */
 }
 
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside input fields */
+    font-size: 1em; /* Font size inside input fields */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for input fields */
+    background-color: #fafafa; /* Light background color for input fields */
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for border and background color */
 }
 
-/* Style the submit button */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    background-color: #ffffff; /* White background on focus */
+    outline: none; /* Remove default outline */
+}
+
 button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
+    background-color: #007bff; /* Blue background color for the button */
+    color: #ffffff; /* White text color for the button */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding inside the button */
+    font-size: 1em; /* Font size for the button text */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover *
